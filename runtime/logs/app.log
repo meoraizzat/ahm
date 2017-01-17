@@ -1,0 +1,210 @@
+2017-01-08 02:44:28 [::1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Setting unknown property: yii\bootstrap\Carousel::item' in D:\xampp\htdocs\ahm\vendor\yiisoft\yii2\base\Component.php:197
+Stack trace:
+#0 D:\xampp\htdocs\ahm\vendor\yiisoft\yii2\BaseYii.php(521): yii\base\Component->__set('item', Array)
+#1 D:\xampp\htdocs\ahm\vendor\yiisoft\yii2\base\Object.php(105): yii\BaseYii::configure(Object(yii\bootstrap\Carousel), Array)
+#2 [internal function]: yii\base\Object->__construct(Array)
+#3 D:\xampp\htdocs\ahm\vendor\yiisoft\yii2\di\Container.php(379): ReflectionClass->newInstanceArgs(Array)
+#4 D:\xampp\htdocs\ahm\vendor\yiisoft\yii2\di\Container.php(154): yii\di\Container->build('yii\\bootstrap\\C...', Array, Array)
+#5 D:\xampp\htdocs\ahm\vendor\yiisoft\yii2\BaseYii.php(344): yii\di\Container->get('yii\\bootstrap\\C...', Array, Array)
+#6 D:\xampp\htdocs\ahm\vendor\yiisoft\yii2\base\Widget.php(101): yii\BaseYii::createObject(Array)
+#7 D:\xampp\htdocs\ahm\views\site\index.php(82): yii\base\Widget::widget(Array)
+#8 D:\xampp\htdocs\ahm\vendor\yiisoft\yii2\base\View.php(326): require('D:\\xampp\\htdocs...')
+#9 D:\xampp\htdocs\ahm\vendor\yiisoft\yii2\base\View.php(248): yii\base\View->renderPhpFile('D:\\xampp\\htdocs...', Array)
+#10 D:\xampp\htdocs\ahm\vendor\yiisoft\yii2\base\View.php(150): yii\base\View->renderFile('D:\\xampp\\htdocs...', Array, Object(app\controllers\SiteController))
+#11 D:\xampp\htdocs\ahm\vendor\yiisoft\yii2\base\Controller.php(378): yii\base\View->render('index', Array, Object(app\controllers\SiteController))
+#12 D:\xampp\htdocs\ahm\controllers\SiteController.php(63): yii\base\Controller->render('index')
+#13 [internal function]: app\controllers\SiteController->actionIndex()
+#14 D:\xampp\htdocs\ahm\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#15 D:\xampp\htdocs\ahm\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#16 D:\xampp\htdocs\ahm\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('index', Array)
+#17 D:\xampp\htdocs\ahm\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('site/index', Array)
+#18 D:\xampp\htdocs\ahm\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 D:\xampp\htdocs\ahm\web\index.php(12): yii\base\Application->run()
+#20 {main}
+2017-01-08 02:44:28 [::1][-][-][info][application] $_GET = [
+    'r' => 'site/index'
+]
+
+$_COOKIE = [
+    '_csrf' => 'f38c911caf7abf4b2055eac67bd546ee89ea8beede58ed3312f58152d0c95413a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"CGMxqyQbzblntuMH6GL2XeJVGGolDM2s\";}'
+    'PHPSESSID' => '4uvs5m0ihh08s2thukna4eibf5'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:51.0) Gecko/20100101 Firefox/51.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/ahm/web/index.php?r=site%2Fcontact'
+    'HTTP_COOKIE' => '_csrf=f38c911caf7abf4b2055eac67bd546ee89ea8beede58ed3312f58152d0c95413a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22CGMxqyQbzblntuMH6GL2XeJVGGolDM2s%22%3B%7D; PHPSESSID=4uvs5m0ihh08s2thukna4eibf5'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\Git\\cmd;D:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Faiz\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Faiz\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.28 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.28'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/xampp/htdocs/ahm/web/index.php'
+    'REMOTE_PORT' => '63862'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Findex'
+    'REQUEST_URI' => '/ahm/web/index.php?r=site%2Findex'
+    'SCRIPT_NAME' => '/ahm/web/index.php'
+    'PHP_SELF' => '/ahm/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1483839868.342
+    'REQUEST_TIME' => 1483839868
+]
+2017-01-08 02:45:43 [::1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected ']'' in D:\xampp\htdocs\ahm\views\site\index.php:82
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2017-01-08 02:45:43 [::1][-][-][info][application] $_GET = [
+    'r' => 'site/index'
+]
+
+$_COOKIE = [
+    '_csrf' => 'f38c911caf7abf4b2055eac67bd546ee89ea8beede58ed3312f58152d0c95413a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"CGMxqyQbzblntuMH6GL2XeJVGGolDM2s\";}'
+    'PHPSESSID' => '4uvs5m0ihh08s2thukna4eibf5'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:51.0) Gecko/20100101 Firefox/51.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/ahm/web/index.php?r=site%2Fcontact'
+    'HTTP_COOKIE' => '_csrf=f38c911caf7abf4b2055eac67bd546ee89ea8beede58ed3312f58152d0c95413a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22CGMxqyQbzblntuMH6GL2XeJVGGolDM2s%22%3B%7D; PHPSESSID=4uvs5m0ihh08s2thukna4eibf5'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\Git\\cmd;D:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Faiz\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Faiz\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.28 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.28'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/xampp/htdocs/ahm/web/index.php'
+    'REMOTE_PORT' => '63966'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Findex'
+    'REQUEST_URI' => '/ahm/web/index.php?r=site%2Findex'
+    'SCRIPT_NAME' => '/ahm/web/index.php'
+    'PHP_SELF' => '/ahm/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1483839943.777
+    'REQUEST_TIME' => 1483839943
+]
+2017-01-08 09:50:17 [::1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Setting unknown property: yii\bootstrap\Carousel::option' in D:\xampp\htdocs\ahm\vendor\yiisoft\yii2\base\Component.php:197
+Stack trace:
+#0 D:\xampp\htdocs\ahm\vendor\yiisoft\yii2\BaseYii.php(521): yii\base\Component->__set('option', Array)
+#1 D:\xampp\htdocs\ahm\vendor\yiisoft\yii2\base\Object.php(105): yii\BaseYii::configure(Object(yii\bootstrap\Carousel), Array)
+#2 [internal function]: yii\base\Object->__construct(Array)
+#3 D:\xampp\htdocs\ahm\vendor\yiisoft\yii2\di\Container.php(379): ReflectionClass->newInstanceArgs(Array)
+#4 D:\xampp\htdocs\ahm\vendor\yiisoft\yii2\di\Container.php(154): yii\di\Container->build('yii\\bootstrap\\C...', Array, Array)
+#5 D:\xampp\htdocs\ahm\vendor\yiisoft\yii2\BaseYii.php(344): yii\di\Container->get('yii\\bootstrap\\C...', Array, Array)
+#6 D:\xampp\htdocs\ahm\vendor\yiisoft\yii2\base\Widget.php(101): yii\BaseYii::createObject(Array)
+#7 D:\xampp\htdocs\ahm\views\site\index.php(85): yii\base\Widget::widget(Array)
+#8 D:\xampp\htdocs\ahm\vendor\yiisoft\yii2\base\View.php(326): require('D:\\xampp\\htdocs...')
+#9 D:\xampp\htdocs\ahm\vendor\yiisoft\yii2\base\View.php(248): yii\base\View->renderPhpFile('D:\\xampp\\htdocs...', Array)
+#10 D:\xampp\htdocs\ahm\vendor\yiisoft\yii2\base\View.php(150): yii\base\View->renderFile('D:\\xampp\\htdocs...', Array, Object(app\controllers\SiteController))
+#11 D:\xampp\htdocs\ahm\vendor\yiisoft\yii2\base\Controller.php(378): yii\base\View->render('index', Array, Object(app\controllers\SiteController))
+#12 D:\xampp\htdocs\ahm\controllers\SiteController.php(63): yii\base\Controller->render('index')
+#13 [internal function]: app\controllers\SiteController->actionIndex()
+#14 D:\xampp\htdocs\ahm\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#15 D:\xampp\htdocs\ahm\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#16 D:\xampp\htdocs\ahm\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('', Array)
+#17 D:\xampp\htdocs\ahm\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('', Array)
+#18 D:\xampp\htdocs\ahm\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 D:\xampp\htdocs\ahm\web\index.php(12): yii\base\Application->run()
+#20 {main}
+2017-01-08 09:50:17 [::1][-][-][info][application] $_COOKIE = [
+    '_csrf' => '7699595311d06050d60fc943e0829b86a2d3ce1679ae00a1178463c9b4e317a8a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Nksk_dcoZF9EXzLGHa2mdvLGL7WwSdu7\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:51.0) Gecko/20100101 Firefox/51.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/ahm/'
+    'HTTP_COOKIE' => '_csrf=7699595311d06050d60fc943e0829b86a2d3ce1679ae00a1178463c9b4e317a8a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Nksk_dcoZF9EXzLGHa2mdvLGL7WwSdu7%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\Git\\cmd;D:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Faiz\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Faiz\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.28 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.28'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/xampp/htdocs/ahm/web/index.php'
+    'REMOTE_PORT' => '63530'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/ahm/web/'
+    'SCRIPT_NAME' => '/ahm/web/index.php'
+    'PHP_SELF' => '/ahm/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1483865417.404
+    'REQUEST_TIME' => 1483865417
+]
